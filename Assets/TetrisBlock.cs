@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+// programming for every indiviual tetrisBlock, that is used as a composite pattern in a trtris piece.
 public class TetrisBlock : MonoBehaviour
 
 {
@@ -102,7 +102,7 @@ private static Transform[,] grid = new Transform[width, height];
             }
         }
     }
-    // adds dropped down blocks to the grid, so they block the other blocks
+    // adds dropped down blocks to the grid, so they block the other blocks; 
     void AddtoGrid()
      {
         foreach (Transform children in transform)

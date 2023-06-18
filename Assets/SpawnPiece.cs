@@ -11,7 +11,7 @@ public class SpawnPiece : MonoBehaviour
     {
         NewPiece();
     }
-
+    // factory pattern, creates new piece
     public void NewPiece() 
     {
         Instantiate(Pieces[Random.Range(0, Pieces.Length)], transform.position, Quaternion.identity);
